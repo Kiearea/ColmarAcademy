@@ -31,7 +31,7 @@
 }
 
 
-/*Navigation*/
+/*Navigation Section*/
 navigation {
   background-color: white;
   display: flex;
@@ -84,7 +84,7 @@ li:hover {
   color: #14bdff;
 }
 
-/*Header*/
+/*Header Section*/
 header {
   background-color: #e6f8ff;
   position: relative;
@@ -141,4 +141,35 @@ header .text-container a h3 {
 
 header a:hover {
   background-color: #ff1414;
+}
+
+/*Practice Section*/
+practice {
+  display: flex;
+  margin-top: 2rem;
+}
+
+practice .image-container {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+practice .image-container .text-container h2{
+  margin: 2rem auto;
+  font-family: Poppins;
+  font-size: 3.5rem;
+}
+
+practice .image-container .text-container h4 {
+  font-family: "Open Sans";
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+practice .image-container .text-container h5 {
+  margin: 2rem auto;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-weight: 400;
 }
