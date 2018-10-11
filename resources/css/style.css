@@ -94,8 +94,8 @@ li:hover {
   color: #14bdff;
 }
 
-/*Header Section*/
-header {
+/*Primary Section*/
+primary {
   background-color: #e6f8ff;
   position: relative;
   top: 4rem;
@@ -104,25 +104,25 @@ header {
   padding: 2rem 0;
 }
 
-header img {
+primary img {
   width: 60%;
   margin-left: 1.5rem;
 }
 
-header .text-container {
+primary .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-header .text-container h2 {
+primary .text-container h2 {
   font-size: 3.5rem;
   line-height: 1.25;
   width: 70%
 }
 
-header .text-container h4 {
+primary .text-container h4 {
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 300;
@@ -130,7 +130,7 @@ header .text-container h4 {
   width: 70%
 }
 
-header .text-container a {
+primary .text-container a {
   margin-top: 2.5rem;
   background-color: #14bdff;
   width: 70%;
@@ -138,14 +138,14 @@ header .text-container a {
   justify-content: center;
 }
 
-header .text-container a h3 {
+primary .text-container a h3 {
   margin: 1rem auto;
   font-weight: bold;
   font-size: 1.5rem;
   color: #ffffff;
 }
 
-header a:hover {
+primary a:hover {
   background-color: #ff1414;
 }
 
@@ -196,14 +196,14 @@ practice .boxes-container .orientation-container {
   display: flex;
   align-items: center;
   padding: 2rem;
-  border-bottom: 1px solid #002533;
+  border-bottom: 0.01rem solid #002533;
 }
 
 practice .boxes-container .campus-container {
   display: flex;
   align-items: center;
   padding: 2rem;
-  border-bottom: 1px solid #002533;
+  border-bottom: 0.01rem solid #002533;
 }
 
 practice .boxes-container .guest-container {
@@ -250,7 +250,7 @@ learning {
 }
 
 learning h1 {
-  margin-bottom: 2rem;
+  margin: 1.5rem auto 3rem auto;
   text-align: center;
   font-size: 3.5rem;
   height: auto;
@@ -290,4 +290,103 @@ learning .courses-container p {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 300;
+}
+
+/*Thesis Section*/
+thesis {
+  position: relative;
+  top: 4rem;
+}
+
+thesis .thesis-container {
+  display: flex;
+}
+
+thesis .video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+thesis .boxes-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 1.5rem;
+}
+
+thesis .boxes-container img {
+  width: 35%;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+thesis .boxes-container .fisma-container {
+  display: flex;
+  align-items: center;
+  background-color: #e6f8ff;
+  padding: 2rem;
+}
+
+thesis .boxes-container .now-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+thesis h1 {
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+thesis .video-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 60%;
+}
+
+thesis .video-container video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+thesis .text-container h2 {
+  font-size: 2rem;
+}
+
+thesis .text-container p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+
+
+/*Footer*/
+footer {
+  position: relative;
+  top: 4rem;
+  margin-top: 2rem;
+  border-top: 1px solid #002533;
+}
+
+footer .footer-container {
+  margin: 2rem 1.5rem 2.5rem 1.5rem;
+  display: flex;
+}
+
+footer .footer-container .links {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-container .links a {
+  margin-right: 1.5rem;
+}
+
+footer a:hover {
+  color: #14bdff;
 }
