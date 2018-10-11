@@ -94,6 +94,38 @@ li:hover {
   color: #14bdff;
 }
 
+navigation .mobile {
+  display: none;
+}
+
+/*Navigation Mobile*/
+@media only screen and (max-width: 480px) {
+  navigation .logo-container {
+    display: none;
+  }
+
+  navigation .links-container {
+    display: none;
+  }
+
+  navigation .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  navigation .mobile img {
+    height: 3rem;
+    transition: all .25s ease-in;
+  }
+
+  navigation .mobile img:hover {
+    transform: scale(1.4);
+  }
+}
+
+
 /*Primary Section*/
 primary {
   background-color: #e6f8ff;
@@ -148,6 +180,43 @@ primary .text-container a h3 {
 primary a:hover {
   background-color: #ff1414;
 }
+
+/*Primary Mobile*/
+@media only screen and (max-width: 480px) {
+  primary {
+    flex-direction: column;
+    top: 2rem;
+    padding-bottom: 0;
+  }
+
+  primary img {
+    width: 100%;
+    margin: 0;
+  }
+
+  primary .text-container {
+    margin: 1.5rem 1rem 0 1rem;
+  }
+
+  primary .text-container h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  primary .text-container h4 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem
+  }
+
+  primary .text-container a  {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+}
+
 
 /*Practice Section*/
 practice {
@@ -381,12 +450,18 @@ footer .footer-container .links {
   margin-left: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 footer .footer-container .links a {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  align-self: center;
 }
 
 footer a:hover {
   color: #14bdff;
+}
+
+footer .social-media {
+  margin-right: 1.5rem;
 }
