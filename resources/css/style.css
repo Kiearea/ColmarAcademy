@@ -327,7 +327,6 @@ practice a:hover {
 
   practice {
     margin: 1rem;
-    top: 2rem;
   }
 
   practice .boxes-container  {
@@ -466,28 +465,23 @@ learning .courses-container p {
   }
 
   learning .container {
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0;
     padding: 0;
     display: flex;
-
     height: auto;
     background-color: #e6f8ff;
   }
 
   learning h1 {
     font-size: 3rem;
-    margin: 1.5rem auto 1.5rem auto;
+    margin: 1.5rem 1rem;
   }
 
   learning .courses-container h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 1rem 1rem 1.5rem 1rem;
+    margin: 1.5rem 1rem;
   }
-
-
-
-
 }
 
 /*Thesis Section*/
@@ -498,6 +492,7 @@ thesis {
 
 thesis .thesis-container {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 thesis .video-container {
@@ -560,19 +555,46 @@ thesis .text-container p {
   font-size: 1.5rem;
 }
 
+/*Thesis Mobile*/
+@media only screen and (max-width: 480px) {
+  thesis h1 {
+    font-size: 3rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
 
+  thesis .thesis-container {
+    width: 100%;
+  }
+
+  thesis .text-container {
+    display: none;
+  }
+
+  thesis .boxes-container {
+    display: none;
+  }
+
+  thesis .video-container {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  thesis .video-container video {
+    margin: 0;
+  }
+}
 
 /*Footer*/
 footer {
   position: relative;
   top: 4rem;
-  margin-top: 2rem;
   border-top: 1px solid #002533;
+  height: 5rem;
 }
 
 footer .footer-container {
-  margin: 2rem 1.5rem 2.5rem 1.5rem;
   display: flex;
+  margin-top: 1.5rem;
 }
 
 footer .footer-container .links {
@@ -597,4 +619,29 @@ footer .social-media {
 
 footer .social-media a {
   margin: 0.25rem;
+}
+
+/*Footer Mobile*/
+@media only screen and (max-width: 480px) {
+  footer {
+    position: relative;
+    margin: auto 1rem;
+    border: none;
+  }
+
+  footer .footer-container {
+    margin: 0;
+    align-items: center;
+
+  }
+
+  footer .footer-container .links {
+    margin: 0;
+
+  }
+
+  footer .social-media {
+    margin: 0;
+
+  }
 }
