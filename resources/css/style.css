@@ -35,11 +35,11 @@ h1, h2, h4, h5, p {
 }
 
 h1, h2, h3, li {
-  font-family: Poppins;
+  font-family: Poppins, Verdana, sans-serif;
 }
 
 h4, h5, p, a {
-  font-family: "Open Sans"
+  font-family: "Open Sans", "Arial Narrow", sans-serif;
 }
 
 
@@ -256,6 +256,10 @@ practice .boxes-container {
   border-left: 1px solid #002533;
 }
 
+practice .boxes-container .mobile {
+  display: none;
+}
+
 practice .boxes-container img {
   width: 35%;
   height: auto;
@@ -305,6 +309,82 @@ practice .boxes-container .text-container a {
 
 practice a:hover {
   color: #14bdff;
+}
+
+/*Practice Mobile*/
+@media only screen and (max-width: 480px) {
+  practice .image-container {
+    display: none;
+  }
+
+  practice .boxes-container img {
+    display: none;
+  }
+
+  practice .boxes-container {
+    border: none;
+  }
+
+  practice {
+    margin: 1rem;
+    top: 2rem;
+  }
+
+  practice .boxes-container  {
+    width: 100%
+  }
+
+  practice .boxes-container .mobile {
+    display: block;
+    width: 100%
+  }
+
+  practice .boxes-container .orientation-container  {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  practice .boxes-container .campus-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  practice .boxes-container .guest-container {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    background-color: inherit;
+  }
+
+  practice .boxes-container .text-container {
+    width: 100%;
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  practice .boxes-container .text-container h2 {
+    margin-bottom: 1rem;
+  }
+
+  practice .boxes-container .text-container p {
+    margin-bottom: .75rem;
+  }
+
+  practice .boxes-container .text-container a {
+    color: #14bdff;
+  }
+
+  practice .boxes-container .text-container a:hover {
+    color: #ff1414;
+  }
+
 }
 
 /*Learning Section*/
@@ -359,6 +439,55 @@ learning .courses-container p {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 300;
+}
+
+/*Learning Mobile*/
+@media only screen and (max-width: 480px) {
+  learning .courses-container img {
+    display: none;
+  }
+
+  learning .courses-container h3, p {
+    display: none;
+  }
+
+  learning {
+    padding: 0;
+    background-color: inherit;
+    border-top: 1px solid #002533;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  learning .courses-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  learning .container {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    display: flex;
+
+    height: auto;
+    background-color: #e6f8ff;
+  }
+
+  learning h1 {
+    font-size: 3rem;
+    margin: 1.5rem auto 1.5rem auto;
+  }
+
+  learning .courses-container h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+
+
+
+
 }
 
 /*Thesis Section*/
@@ -464,4 +593,8 @@ footer a:hover {
 
 footer .social-media {
   margin-right: 1.5rem;
+}
+
+footer .social-media a {
+  margin: 0.25rem;
 }
