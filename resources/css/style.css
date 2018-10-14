@@ -31,7 +31,7 @@
 }
 
 h1, h2, h4, h5, p {
-  color: color:  #002533;
+  color: #002533;
 }
 
 h1, h2, h3, li {
@@ -41,6 +41,7 @@ h1, h2, h3, li {
 h4, h5, p, a {
   font-family: "Open Sans", "Arial Narrow", sans-serif;
 }
+
 
 /*header Section*/
 header {
@@ -97,7 +98,7 @@ header .mobile {
   display: none;
 }
 
-/*header Mobile*/
+/*Header Mobile*/
 @media only screen and (max-width: 480px) {
   header .logo-container {
     display: none;
@@ -128,8 +129,6 @@ header .mobile {
 /*banner Section*/
 banner {
   background-color: #e6f8ff;
-  position: relative;
-  top: 4rem;
   z-index: 1;
   display: flex;
   padding: 2rem 0;
@@ -138,6 +137,7 @@ banner {
 banner img {
   width: 60%;
   margin-left: 1.5rem;
+  margin-top: 4rem;
 }
 
 banner .text-container {
@@ -219,8 +219,6 @@ banner a:hover {
 /*main Section*/
 main {
   display: flex;
-  top: 4rem;
-  position: relative;
   z-index: 2;
 }
 
@@ -387,8 +385,6 @@ main a:hover {
 /*Courses Section*/
 courses {
   background-color: #e6f8ff;
-  position: relative;
-  top: 4rem;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -483,11 +479,6 @@ courses .courses-container p {
 }
 
 /*Thesis Section*/
-thesis {
-  position: relative;
-  top: 4rem;
-}
-
 thesis .thesis-container {
   display: flex;
   margin-bottom: 2rem;
@@ -562,6 +553,7 @@ thesis .text-container p {
 
   thesis .thesis-container {
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   thesis .text-container {
@@ -584,8 +576,6 @@ thesis .text-container p {
 
 /*Footer*/
 footer {
-  position: relative;
-  top: 4rem;
   border-top: 1px solid #002533;
   height: 5rem;
 }
@@ -616,7 +606,7 @@ footer .social-media {
   margin-right: 1.5rem;
 }
 
-footer .social-media a {
+footer .social-media .fab {
   margin: 0.25rem;
 }
 
@@ -625,23 +615,31 @@ footer .social-media a {
   footer {
     margin: auto 1rem;
     border: none;
-
   }
 
   footer .footer-container {
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-
+  footer .footer-container p {
+    display: flex;
+    margin-bottom: 1rem;
   }
 
   footer .footer-container .links {
-    margin: 0;
+    display: none;
+  }
 
+  footer .footer-container .links a {
+    margin: 0;
   }
 
   footer .social-media {
-    display: none;
+
 
   }
 }
