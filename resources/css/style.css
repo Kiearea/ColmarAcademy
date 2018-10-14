@@ -42,9 +42,8 @@ h4, h5, p, a {
   font-family: "Open Sans", "Arial Narrow", sans-serif;
 }
 
-
-/*Navigation Section*/
-navigation {
+/*header Section*/
+header {
   background-color: white;
   display: flex;
   height: 4rem;
@@ -54,39 +53,39 @@ navigation {
   width: 100%;
 }
 
-navigation .logo-container {
+header .logo-container {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
 }
 
-navigation .logo-container .logo img {
+header .logo-container .logo img {
   height: 3rem;
 }
 
-navigation .logo-container h2 {
+header .logo-container h2 {
   font-size: 2rem;
   font-weight: normal;
   color: #14bdff;
 }
 
-navigation .logo-container h2 span {
+header .logo-container h2 span {
   font-weight: bold;
   color:  #002533;
 }
 
-navigation .links-container {
+header .links-container {
   font-size: 1.25rem;
   color:  #002533;
   margin-left: auto;
   margin-right: 1.5rem;
 }
 
-navigation .links-container ul {
+header .links-container ul {
   display: flex;
 }
 
-navigation .links-container ul li {
+header .links-container ul li {
   margin: 0 0.5rem;
 }
 
@@ -94,40 +93,40 @@ li:hover {
   color: #14bdff;
 }
 
-navigation .mobile {
+header .mobile {
   display: none;
 }
 
-/*Navigation Mobile*/
+/*header Mobile*/
 @media only screen and (max-width: 480px) {
-  navigation .logo-container {
+  header .logo-container {
     display: none;
   }
 
-  navigation .links-container {
+  header .links-container {
     display: none;
   }
 
-  navigation .mobile {
+  header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
 
-  navigation .mobile img {
+  header .mobile img {
     height: 3rem;
     transition: all .25s ease-in;
   }
 
-  navigation .mobile img:hover {
+  header .mobile img:hover {
     transform: scale(1.4);
   }
 }
 
 
-/*Primary Section*/
-primary {
+/*banner Section*/
+banner {
   background-color: #e6f8ff;
   position: relative;
   top: 4rem;
@@ -136,25 +135,25 @@ primary {
   padding: 2rem 0;
 }
 
-primary img {
+banner img {
   width: 60%;
   margin-left: 1.5rem;
 }
 
-primary .text-container {
+banner .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-primary .text-container h2 {
+banner .text-container h2 {
   font-size: 3.5rem;
   line-height: 1.25;
   width: 70%
 }
 
-primary .text-container h4 {
+banner .text-container h4 {
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 300;
@@ -162,7 +161,7 @@ primary .text-container h4 {
   width: 70%
 }
 
-primary .text-container a {
+banner .text-container a {
   margin-top: 2.5rem;
   background-color: #14bdff;
   width: 70%;
@@ -170,40 +169,39 @@ primary .text-container a {
   justify-content: center;
 }
 
-primary .text-container a h3 {
+banner .text-container a h3 {
   margin: 1rem auto;
   font-weight: bold;
   font-size: 1.5rem;
   color: #ffffff;
 }
 
-primary a:hover {
+banner a:hover {
   background-color: #ff1414;
 }
 
-/*Primary Mobile*/
+/*header Mobile*/
 @media only screen and (max-width: 480px) {
-  primary {
+  banner {
     flex-direction: column;
-    top: 2rem;
-    padding-bottom: 0;
+    padding: 0;
   }
 
-  primary img {
+  banner img {
     width: 100%;
     margin: 0;
   }
 
-  primary .text-container {
+  banner .text-container {
     margin: 1.5rem 1rem 0 1rem;
   }
 
-  primary .text-container h2 {
+  banner .text-container h2 {
     font-size: 2.5rem;
     width: 100%;
   }
 
-  primary .text-container h4 {
+  banner .text-container h4 {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -211,44 +209,44 @@ primary a:hover {
     margin-bottom: 1.5rem
   }
 
-  primary .text-container a  {
+  banner .text-container a  {
     margin: 0 0 2rem 0;
     width: 100%;
   }
 }
 
 
-/*Practice Section*/
-practice {
+/*main Section*/
+main {
   display: flex;
   top: 4rem;
   position: relative;
   z-index: 2;
 }
 
-practice .image-container {
+main .image-container {
   width: 60%;
   margin: 2rem 1.5rem;
 }
 
-practice .image-container .text-container h2{
+main .image-container .text-container h2{
   margin: 2rem auto;
   font-size: 3.5rem;
 }
 
-practice .image-container .text-container h4 {
+main .image-container .text-container h4 {
   font-size: 1.75rem;
   font-weight: 300;
   line-height: 1.5;
 }
 
-practice .image-container .text-container h5 {
+main .image-container .text-container h5 {
   margin: 3rem auto 2rem auto;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-practice .boxes-container {
+main .boxes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,89 +254,89 @@ practice .boxes-container {
   border-left: 1px solid #002533;
 }
 
-practice .boxes-container .mobile {
+main .boxes-container .mobile {
   display: none;
 }
 
-practice .boxes-container img {
+main .boxes-container img {
   width: 35%;
   height: auto;
 }
 
-practice .boxes-container .orientation-container {
+main .boxes-container .orientation-container {
   display: flex;
   align-items: center;
   padding: 2rem;
   border-bottom: 0.01rem solid #002533;
 }
 
-practice .boxes-container .campus-container {
+main .boxes-container .campus-container {
   display: flex;
   align-items: center;
   padding: 2rem;
   border-bottom: 0.01rem solid #002533;
 }
 
-practice .boxes-container .guest-container {
+main .boxes-container .guest-container {
   background-color: #e6f8ff;
   display: flex;
   align-items: center;
   padding: 2rem;
 }
 
-practice .boxes-container .text-container {
+main .boxes-container .text-container {
   width: 65%;
   margin-left: 2rem;
 }
 
-practice .boxes-container .text-container h2 {
+main .boxes-container .text-container h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-practice .boxes-container .text-container p {
+main .boxes-container .text-container p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
 }
 
-practice .boxes-container .text-container a {
+main .boxes-container .text-container a {
   font-size: 1.25rem;
 }
 
-practice a:hover {
+main a:hover {
   color: #14bdff;
 }
 
-/*Practice Mobile*/
+/*main Mobile*/
 @media only screen and (max-width: 480px) {
-  practice .image-container {
+  main .image-container {
     display: none;
   }
 
-  practice .boxes-container img {
+  main .boxes-container img {
     display: none;
   }
 
-  practice .boxes-container {
+  main .boxes-container {
     border: none;
   }
 
-  practice {
+  main {
     margin: 1rem;
   }
 
-  practice .boxes-container  {
+  main .boxes-container  {
     width: 100%
   }
 
-  practice .boxes-container .mobile {
+  main .boxes-container .mobile {
     display: block;
     width: 100%
   }
 
-  practice .boxes-container .orientation-container  {
+  main .boxes-container .orientation-container  {
     display: flex;
     flex-direction: column;
     border: none;
@@ -346,7 +344,7 @@ practice a:hover {
     margin-bottom: 4rem;
   }
 
-  practice .boxes-container .campus-container {
+  main .boxes-container .campus-container {
     display: flex;
     flex-direction: column;
     border: none;
@@ -354,7 +352,7 @@ practice a:hover {
     margin-bottom: 4rem;
   }
 
-  practice .boxes-container .guest-container {
+  main .boxes-container .guest-container {
     display: flex;
     flex-direction: column;
     border: none;
@@ -363,31 +361,31 @@ practice a:hover {
     background-color: inherit;
   }
 
-  practice .boxes-container .text-container {
+  main .boxes-container .text-container {
     width: 100%;
     margin: 2rem 1rem 0 1rem;
   }
 
-  practice .boxes-container .text-container h2 {
+  main .boxes-container .text-container h2 {
     margin-bottom: 1rem;
   }
 
-  practice .boxes-container .text-container p {
+  main .boxes-container .text-container p {
     margin-bottom: .75rem;
   }
 
-  practice .boxes-container .text-container a {
+  main .boxes-container .text-container a {
     color: #14bdff;
   }
 
-  practice .boxes-container .text-container a:hover {
+  main .boxes-container .text-container a:hover {
     color: #ff1414;
   }
 
 }
 
-/*Learning Section*/
-learning {
+/*Courses Section*/
+courses {
   background-color: #e6f8ff;
   position: relative;
   top: 4rem;
@@ -397,14 +395,14 @@ learning {
   padding: 2rem 0;
 }
 
-learning h1 {
+courses h1 {
   margin: 1.5rem auto 3rem auto;
   text-align: center;
   font-size: 3.5rem;
   height: auto;
 }
 
-learning .courses-container {
+courses .courses-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -412,7 +410,7 @@ learning .courses-container {
   margin: auto 4.5rem;
 }
 
-learning .container {
+courses .container {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -423,34 +421,34 @@ learning .container {
   padding-bottom: 2.5rem;
 }
 
-learning .courses-container h2 {
+courses .courses-container h2 {
   margin: 1.5rem 1.5rem 1rem 1.5rem;
   font-size: 2rem;
 }
 
-learning .courses-container h3 {
+courses .courses-container h3 {
   margin: 0.5rem 1.5rem 0.5rem 1.5rem;
   font-weight: 300;
 }
 
-learning .courses-container p {
+courses .courses-container p {
   margin: 0.5rem 1.5rem;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 300;
 }
 
-/*Learning Mobile*/
+/*courses Mobile*/
 @media only screen and (max-width: 480px) {
-  learning .courses-container img {
+  courses .courses-container img {
     display: none;
   }
 
-  learning .courses-container h3, p {
+  courses .courses-container h3, p {
     display: none;
   }
 
-  learning {
+  courses {
     padding: 0;
     background-color: inherit;
     border-top: 1px solid #002533;
@@ -459,12 +457,12 @@ learning .courses-container p {
     justify-content: center;
   }
 
-  learning .courses-container {
+  courses .courses-container {
     width: 100%;
     margin: 0;
   }
 
-  learning .container {
+  courses .container {
     margin: 0 0 0.5rem 0;
     padding: 0;
     display: flex;
@@ -472,12 +470,12 @@ learning .courses-container p {
     background-color: #e6f8ff;
   }
 
-  learning h1 {
+  courses h1 {
     font-size: 3rem;
     margin: 1.5rem 1rem;
   }
 
-  learning .courses-container h2 {
+  courses .courses-container h2 {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1.5rem 1rem;
@@ -595,6 +593,7 @@ footer {
 footer .footer-container {
   display: flex;
   margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 footer .footer-container .links {
@@ -624,14 +623,15 @@ footer .social-media a {
 /*Footer Mobile*/
 @media only screen and (max-width: 480px) {
   footer {
-    position: relative;
     margin: auto 1rem;
     border: none;
+
   }
 
   footer .footer-container {
     margin: 0;
-    align-items: center;
+    display: block;
+
 
   }
 
@@ -641,7 +641,7 @@ footer .social-media a {
   }
 
   footer .social-media {
-    margin: 0;
+    display: none;
 
   }
 }
