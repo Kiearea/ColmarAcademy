@@ -35,7 +35,7 @@ h1, h2, h4, h5, p {
 }
 
 h1, h2, h3, li {
-  font-family: Poppins, Verdana, sans-serif;
+  font-family: "Poppins", Verdana, sans-serif;
 }
 
 h4, h5, p, a {
@@ -43,8 +43,8 @@ h4, h5, p, a {
 }
 
 
-/*header Section*/
-header {
+/*Nav Section*/
+nav {
   background-color: white;
   display: flex;
   height: 4rem;
@@ -54,39 +54,39 @@ header {
   width: 100%;
 }
 
-header .logo-container {
+nav .logo-container {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
 }
 
-header .logo-container .logo img {
+nav .logo-container .logo img {
   height: 3rem;
 }
 
-header .logo-container h2 {
+nav .logo-container h2 {
   font-size: 2rem;
   font-weight: normal;
   color: #14bdff;
 }
 
-header .logo-container h2 span {
+nav .logo-container h2 span {
   font-weight: bold;
   color:  #002533;
 }
 
-header .links-container {
+nav .links-container {
   font-size: 1.25rem;
   color:  #002533;
   margin-left: auto;
   margin-right: 1.5rem;
 }
 
-header .links-container ul {
+nav .links-container ul {
   display: flex;
 }
 
-header .links-container ul li {
+nav .links-container ul li {
   margin: 0 0.5rem;
 }
 
@@ -94,85 +94,85 @@ li:hover {
   color: #14bdff;
 }
 
-header .mobile {
+nav .mobile {
   display: none;
 }
 
-/*Header Tablet*/
+/*Nav Tablet*/
 @media only screen and (max-width: 768px) {
-  header .links-container ul li {
+  nav .links-container ul li {
     margin: 0 0.5rem;
   }
 
-  header .links-container {
+  nav .links-container {
     font-size: 1rem;
   }
 
-  header .logo-container .logo img {
+  nav .logo-container .logo img {
     height: 2rem;
   }
 
-  header .logo-container h2 {
+  nav .logo-container h2 {
     font-size: 1.5rem;
   }
 }
 
-/*Header Mobile*/
+/*Nav Mobile*/
 @media only screen and (max-width: 480px) {
-  header .logo-container {
+  nav .logo-container {
     display: none;
   }
 
-  header .links-container {
+  nav .links-container {
     display: none;
   }
 
-  header .mobile {
+  nav .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
 
-  header .mobile img {
+  nav .mobile img {
     height: 3rem;
     transition: all .25s ease-in;
   }
 
-  header .mobile img:hover {
+  nav .mobile img:hover {
     transform: scale(1.4);
   }
 }
 
 
-/*banner Section*/
-banner {
+/*First Section*/
+#first {
   background-color: #e6f8ff;
   z-index: 1;
   display: flex;
   padding: 2rem 0;
 }
 
-banner img {
+#first img {
   width: 60%;
   margin-left: 1.5rem;
   margin-top: 4rem;
 }
 
-banner .text-container {
+#first .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-banner .text-container h2 {
+#first .text-container h2 {
   font-size: 3.5rem;
   line-height: 1.25;
   width: 70%
 }
 
-banner .text-container h4 {
+#first .text-container h4 {
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 300;
@@ -180,7 +180,7 @@ banner .text-container h4 {
   width: 70%
 }
 
-banner .text-container a {
+#first .text-container a {
   margin-top: 2.5rem;
   background-color: #14bdff;
   width: 70%;
@@ -188,72 +188,72 @@ banner .text-container a {
   justify-content: center;
 }
 
-banner .text-container a h3 {
+#first .text-container a h3 {
   margin: 1rem auto;
   font-weight: bold;
   font-size: 1.5rem;
   color: #ffffff;
 }
 
-banner a:hover {
+#first a:hover {
   background-color: #ff1414;
 }
 
-/*Header Tablet*/
+/*#First Tablet*/
 @media only screen and (max-width: 768px) {
-  banner {
+  #first {
     padding: 4rem 0 0 0;
   }
 
-  banner img{
+  #first img{
     height: 60%;
     margin-top: 2rem;
   }
 
-  banner .text-container {
+  #first .text-container {
     display: flex;
     margin: 2rem 1rem;
   }
 
-  banner .text-container h2 {
+  #first .text-container h2 {
     font-size: 2rem;
     width: 100%;
   }
 
-  banner .text-container h4 {
+  #first .text-container h4 {
     font-size: 1rem;
     width: 100%;
     margin-top: 1rem;
   }
 
-  banner .text-container a {
+  #first .text-container a {
     width: 100%;
     margin-top: 1.5rem;
   }
 }
 
-/*Header Mobile*/
+/*#First Mobile*/
 @media only screen and (max-width: 480px) {
-  banner {
+  #first {
     flex-direction: column;
     padding: 0;
   }
 
-  banner img {
+  #first img {
     width: 100%;
     margin: 4rem auto 1.5rem auto;
   }
 
-  banner .text-container {
+  #first .text-container {
     margin: 1.5rem 1rem 0 1rem;
   }
 
-  banner .text-container h2 {
+  #first .text-container h2 {
     font-size: 2.5rem;
     width: 100%;
   }
 
-  banner .text-container h4 {
+  #first .text-container h4 {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -261,42 +261,41 @@ banner a:hover {
     margin-bottom: 1.5rem
   }
 
-  banner .text-container a  {
+  #first .text-container a  {
     margin: 0 0 2rem 0;
     width: 100%;
   }
 }
 
-
-/*main Section*/
-main {
+/*#Second Section*/
+#second {
   display: flex;
   z-index: 2;
 }
 
-main .image-container {
+#second .image-container {
   width: 60%;
   margin: 2rem 1.5rem;
 }
 
-main .image-container .text-container h2 {
+#second .image-container .text-container h2 {
   margin: 2rem auto;
   font-size: 3.5rem;
 }
 
-main .image-container .text-container h4 {
+#second .image-container .text-container h4 {
   font-size: 1.75rem;
   font-weight: 300;
   line-height: 1.5;
 }
 
-main .image-container .text-container h5 {
+#second .image-container .text-container h5 {
   margin: 3rem auto 2rem auto;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-main .boxes-container {
+#second .boxes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,117 +303,117 @@ main .boxes-container {
   border-left: 1px solid #002533;
 }
 
-main .boxes-container .mobile {
+#second .boxes-container .mobile {
   display: none;
 }
 
-main .boxes-container img {
+#second .boxes-container img {
   width: 35%;
   height: auto;
 }
 
-main .boxes-container .orientation-container {
+#second .boxes-container .orientation-container {
   display: flex;
   align-items: center;
   padding: 2rem;
   border-bottom: 0.01rem solid #002533;
 }
 
-main .boxes-container .campus-container {
+#second .boxes-container .campus-container {
   display: flex;
   align-items: center;
   padding: 2rem;
   border-bottom: 0.01rem solid #002533;
 }
 
-main .boxes-container .guest-container {
+#second .boxes-container .guest-container {
   background-color: #e6f8ff;
   display: flex;
   align-items: center;
   padding: 2rem;
 }
 
-main .boxes-container .text-container {
+#second .boxes-container .text-container {
   width: 65%;
   margin-left: 2rem;
 }
 
-main .boxes-container .text-container h2 {
+#second .boxes-container .text-container h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-main .boxes-container .text-container p {
+#second .boxes-container .text-container p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
 }
 
-main .boxes-container .text-container a {
+#second .boxes-container .text-container a {
   font-size: 1.25rem;
 }
 
-main a:hover {
+#second a:hover {
   color: #14bdff;
 }
 
-/*Main Tablet*/
+/*#Second Tablet*/
 @media only screen and (max-width: 768px) {
-  main .image-container {
+  #second .image-container {
     width: 62%;
     margin: 2rem 1rem;
   }
 
-  main .image-container img {
+  #second .image-container img {
     width: 100%;
   }
 
-  main .image-container .text-container h2 {
+  #second .image-container .text-container h2 {
     font-size: 2rem;
   }
 
-  main .image-container .text-container h4 {
+  #second .image-container .text-container h4 {
     font-size: 1.25rem;
   }
 
-  main .image-container .text-container h5 {
+  #second .image-container .text-container h5 {
     font-size: 1rem;
     margin: 2rem auto 1.5rem auto;
   }
 
-  main .boxes-container {
+  #second .boxes-container {
     margin: 1rem 0;
     width: 30%;
     border: none;
   }
 
-  main .boxes-container img {
+  #second .boxes-container img {
     display: none;
     width: 100%;
     padding: auto 1rem auto 1rem;
   }
 
-  main .boxes-container .mobile {
+  #second .boxes-container .mobile {
     display: block;
     width: 100%;
   }
 
-  main .boxes-container .text-container {
+  #second .boxes-container .text-container {
     width: 100%;
     margin: 2rem 1rem 1rem 1rem;
   }
 
-  main .boxes-container .text-container h2 {
+  #second .boxes-container .text-container h2 {
     margin-bottom: 1rem;
   }
 
-  main .boxes-container .text-container p {
+  #second .boxes-container .text-container p {
     display: none;
     margin-bottom: .75rem;
   }
 
-  main .boxes-container .orientation-container {
+  #second .boxes-container .orientation-container {
     width: 100;
     margin: 1rem auto;
     padding: 0;
@@ -422,7 +421,7 @@ main a:hover {
     flex-direction: column;
   }
 
-  main .boxes-container .campus-container {
+  #second .boxes-container .campus-container {
     width: 100;
     margin: 1rem auto;
     padding: 0;
@@ -430,7 +429,7 @@ main a:hover {
     flex-direction: column;
   }
 
-  main .boxes-container .guest-container {
+  #second .boxes-container .guest-container {
     width: 100;
     margin: 1rem auto;
     padding: 0;
@@ -439,34 +438,34 @@ main a:hover {
   }
 }
 
-/*Main Mobile*/
+/*#Second Mobile*/
 @media only screen and (max-width: 480px) {
-  main .image-container {
+  #second .image-container {
     display: none;
   }
 
-  main .boxes-container img {
+  #second .boxes-container img {
     display: none;
   }
 
-  main .boxes-container {
+  #second .boxes-container {
     border: none;
   }
 
-  main {
+  #second {
     margin: 1rem;
   }
 
-  main .boxes-container  {
+  #second .boxes-container  {
     width: 100%;
   }
 
-  main .boxes-container .mobile {
+  #second .boxes-container .mobile {
     display: block;
     width: 100%;
   }
 
-  main .boxes-container .orientation-container  {
+  #second .boxes-container .orientation-container  {
     display: flex;
     flex-direction: column;
     border: none;
@@ -474,7 +473,7 @@ main a:hover {
     margin:1rem auto 4rem auto;
   }
 
-  main .boxes-container .campus-container {
+  #second .boxes-container .campus-container {
     display: flex;
     flex-direction: column;
     border: none;
@@ -482,7 +481,7 @@ main a:hover {
     margin-bottom: 4rem;
   }
 
-  main .boxes-container .guest-container {
+  #second .boxes-container .guest-container {
     display: flex;
     flex-direction: column;
     border: none;
@@ -491,31 +490,31 @@ main a:hover {
     background-color: inherit;
   }
 
-  main .boxes-container .text-container {
+  #second .boxes-container .text-container {
     width: 100%;
     margin: 2rem 1rem 0 1rem;
   }
 
-  main .boxes-container .text-container h2 {
+  #second .boxes-container .text-container h2 {
     margin-bottom: 1rem;
   }
 
-  main .boxes-container .text-container p {
+  #second .boxes-container .text-container p {
     margin-bottom: .75rem;
   }
 
-  main .boxes-container .text-container a {
+  #second .boxes-container .text-container a {
     color: #14bdff;
   }
 
-  main .boxes-container .text-container a:hover {
+  #second .boxes-container .text-container a:hover {
     color: #ff1414;
   }
 
 }
 
-/*Courses Section*/
-courses {
+/*Third Section*/
+#third {
   background-color: #e6f8ff;
   z-index: 3;
   display: flex;
@@ -523,14 +522,14 @@ courses {
   padding: 2rem 0;
 }
 
-courses h1 {
+#third h1 {
   margin: 1.5rem auto 3rem auto;
   text-align: center;
   font-size: 3.5rem;
   height: auto;
 }
 
-courses .courses-container {
+#third .courses-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -538,7 +537,7 @@ courses .courses-container {
   margin: auto 4.5rem;
 }
 
-courses .container {
+#third .container {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -549,30 +548,30 @@ courses .container {
   padding-bottom: 2.5rem;
 }
 
-courses .courses-container h2 {
+#third .courses-container h2 {
   margin: 1.5rem 1.5rem 1rem 1.5rem;
   font-size: 2rem;
 }
 
-courses .courses-container h3 {
+#third .courses-container h3 {
   margin: 0.5rem 1.5rem 0.5rem 1.5rem;
   font-weight: 300;
 }
 
-courses .courses-container p {
+#third .courses-container p {
   margin: 0.5rem 1.5rem;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 300;
 }
 
-/*Courses Tablet*/
+/*#Third Tablet*/
 @media only screen and (max-width: 768px) {
-  courses .courses-container img {
+  #third .courses-container img {
     display: none;
   }
 
-  courses {
+  #third {
     padding: 0;
     background-color: inherit;
     border-top: 1px solid #002533;
@@ -581,7 +580,7 @@ courses .courses-container p {
     justify-content: center;
   }
 
-  courses .container {
+  #third .container {
     margin: 0 0 0.5rem 0;
     padding: 0;
     display: flex;
@@ -590,38 +589,38 @@ courses .courses-container p {
     background-color: #e6f8ff;
   }
 
-  courses h1 {
+  #third h1 {
     font-size: 3rem;
     margin: 1.5rem 1rem;
   }
 
-  courses .courses-container h2 {
+  #third .courses-container h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 1.5rem 1rem;
     align-self: center;
   }
 
-  courses .courses-container h3 {
+  #third .courses-container h3 {
     display: none;
   }
 
-  courses .courses-container p {
+  #third .courses-container p {
     display: none;
   }
 }
 
-/*Courses Mobile*/
+/*#Third Mobile*/
 @media only screen and (max-width: 480px) {
-  courses .courses-container img {
+  #third .courses-container img {
     display: none;
   }
 
-  courses .courses-container h3, p {
+  #third .courses-container h3, p {
     display: none;
   }
 
-  courses {
+  #third {
     padding: 0;
     background-color: inherit;
     border-top: 1px solid #002533;
@@ -630,12 +629,12 @@ courses .courses-container p {
     justify-content: center;
   }
 
-  courses .courses-container {
+  #third .courses-container {
     width: 100%;
     margin: 0;
   }
 
-  courses .container {
+  #third .container {
     margin: 0 0 0.5rem 0;
     padding: 0;
     display: flex;
@@ -643,169 +642,167 @@ courses .courses-container p {
     background-color: #e6f8ff;
   }
 
-  courses h1 {
+  #third h1 {
     font-size: 3rem;
     margin: 1.5rem 1rem;
   }
 
-  courses .courses-container h2 {
+  #third .courses-container h2 {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1.5rem 1rem;
   }
 }
 
-/*Thesis Section*/
-thesis .thesis-container {
+/*#Fourth Section*/
+#fourth .thesis-container {
   display: flex;
   margin-bottom: 2rem;
 }
 
-thesis .video-container {
+#fourth .video-container {
   display: flex;
   flex-direction: column;
 }
 
-thesis .boxes-container {
+#fourth .boxes-container {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-right: 1.5rem;
 }
 
-thesis .boxes-container img {
+#fourth .boxes-container img {
   width: 35%;
   height: auto;
   margin-right: 1.5rem;
 }
 
-thesis .boxes-container .fisma-container {
+#fourth .boxes-container .fisma-container {
   display: flex;
   align-items: center;
   background-color: #e6f8ff;
   padding: 2rem;
 }
 
-thesis .boxes-container .now-container {
+#fourth .boxes-container .now-container {
   display: flex;
   align-items: center;
   padding: 2rem;
 }
 
-thesis h1 {
+#fourth h1 {
   margin: 3rem auto;
   text-align: center;
   font-size: 3.5rem;
 }
 
-thesis .video-container {
+#fourth .video-container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   width: 60%;
 }
 
-thesis .video-container video {
+#fourth .video-container video {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
 }
 
-thesis .text-container h2 {
+#fourth .text-container h2 {
   font-size: 2rem;
 }
 
-thesis .text-container p {
+#fourth .text-container p {
   margin-top: 1rem;
   line-height: 1.5;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
-/*Thesis Tablet*/
+/*#Fourth Tablet*/
 @media only screen and (max-width: 768px) {
-  thesis .thesis-container {
+  #fourth .thesis-container {
     margin: 1rem;
     justify-content: center;
   }
 
-  thesis .video-container {
+  #fourth .video-container {
     width: 60%;
     margin: 0;
   }
 
-  thesis .video-container video {
+  #fourth .video-container video {
     width: 100%;
     margin-bottom: 0;
   }
 
-  thesis h1 {
+  #fourth h1 {
     font-size: 3rem;
     margin: 1.5rem 1rem 1.5rem 1rem;
   }
 
-  thesis .text-container p {
+  #fourth .text-container p {
     margin: 1rem auto;
     line-height: 1.5;
     font-weight: 300;
     font-size: 1rem;
   }
 
-  thesis .boxes-container {
+  #fourth .boxes-container {
     width: 30%;
     margin-left: 1rem;
   }
 
-  thesis .boxes-container img {
+  #fourth .boxes-container img {
     width: 100%;
     margin: 0;
   }
 
-  thesis .boxes-container .fisma-container {
+  #fourth .boxes-container .fisma-container {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
 
-  thesis .boxes-container .now-container {
+  #fourth .boxes-container .now-container {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
 
-  thesis .text-container h2 {
+  #fourth .text-container h2 {
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-
 }
 
-
-/*Thesis Mobile*/
+/*#Fourth Mobile*/
 @media only screen and (max-width: 480px) {
-  thesis h1 {
+  #fourth h1 {
     font-size: 3rem;
     margin: 1.5rem 1rem 1.5rem 1rem;
   }
 
-  thesis .thesis-container {
+  #fourth .thesis-container {
     width: 100%;
     margin-bottom: 1.5rem;
   }
 
-  thesis .text-container {
+  #fourth .text-container {
     display: none;
   }
 
-  thesis .boxes-container {
+  #fourth .boxes-container {
     display: none;
   }
 
-  thesis .video-container {
+  #fourth .video-container {
     margin-bottom: 1.5rem;
     width: 100%;
   }
 
-  thesis .video-container video {
+  #fourth .video-container video {
     margin: 0;
   }
 }
