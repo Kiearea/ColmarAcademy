@@ -202,7 +202,7 @@ banner a:hover {
 /*Header Tablet*/
 @media only screen and (max-width: 768px) {
   banner {
-    padding-top: 4rem;
+    padding: 4rem 0 0 0;
   }
 
   banner img{
@@ -221,8 +221,9 @@ banner a:hover {
   }
 
   banner .text-container h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     width: 100%;
+    margin-top: 1rem;
   }
 
   banner .text-container a {
@@ -240,7 +241,7 @@ banner a:hover {
 
   banner img {
     width: 100%;
-    margin: 0;
+    margin: 4rem auto 1.5rem auto;
   }
 
   banner .text-container {
@@ -361,7 +362,7 @@ main a:hover {
 /*Main Tablet*/
 @media only screen and (max-width: 768px) {
   main .image-container {
-    width: 60%;
+    width: 62%;
     margin: 2rem 1rem;
   }
 
@@ -383,23 +384,59 @@ main a:hover {
   }
 
   main .boxes-container {
+    margin: 1rem 0;
     width: 30%;
+    border: none;
   }
 
   main .boxes-container img {
+    display: none;
     width: 100%;
     padding: auto 1rem auto 1rem;
+  }
 
+  main .boxes-container .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  main .boxes-container .text-container {
+    width: 100%;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  main .boxes-container .text-container h2 {
+    margin-bottom: 1rem;
+  }
+
+  main .boxes-container .text-container p {
+    display: none;
+    margin-bottom: .75rem;
   }
 
   main .boxes-container .orientation-container {
-    padding: 2rem 0 0 0;
-
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-
   }
 
+  main .boxes-container .campus-container {
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .boxes-container .guest-container {
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*Main Mobile*/
@@ -426,7 +463,7 @@ main a:hover {
 
   main .boxes-container .mobile {
     display: block;
-    width: 100%
+    width: 100%;
   }
 
   main .boxes-container .orientation-container  {
@@ -434,7 +471,7 @@ main a:hover {
     flex-direction: column;
     border: none;
     padding: 0;
-    margin-bottom: 4rem;
+    margin:1rem auto 4rem auto;
   }
 
   main .boxes-container .campus-container {
@@ -529,7 +566,52 @@ courses .courses-container p {
   font-weight: 300;
 }
 
-/*courses Mobile*/
+/*Courses Tablet*/
+@media only screen and (max-width: 768px) {
+  courses .courses-container img {
+    display: none;
+  }
+
+  courses {
+    padding: 0;
+    background-color: inherit;
+    border-top: 1px solid #002533;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  courses .container {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: #e6f8ff;
+  }
+
+  courses h1 {
+    font-size: 3rem;
+    margin: 1.5rem 1rem;
+  }
+
+  courses .courses-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 1rem;
+    align-self: center;
+  }
+
+  courses .courses-container h3 {
+    display: none;
+  }
+
+  courses .courses-container p {
+    display: none;
+  }
+}
+
+/*Courses Mobile*/
 @media only screen and (max-width: 480px) {
   courses .courses-container img {
     display: none;
@@ -639,6 +721,65 @@ thesis .text-container p {
   font-size: 1.5rem;
 }
 
+/*Thesis Tablet*/
+@media only screen and (max-width: 768px) {
+  thesis .thesis-container {
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  thesis .video-container {
+    width: 60%;
+    margin: 0;
+  }
+
+  thesis .video-container video {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  thesis h1 {
+    font-size: 3rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  thesis .text-container p {
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  thesis .boxes-container {
+    width: 30%;
+    margin-left: 1rem;
+  }
+
+  thesis .boxes-container img {
+    width: 100%;
+    margin: 0;
+  }
+
+  thesis .boxes-container .fisma-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  thesis .boxes-container .now-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  thesis .text-container h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+
 /*Thesis Mobile*/
 @media only screen and (max-width: 480px) {
   thesis h1 {
@@ -703,6 +844,13 @@ footer .social-media {
 
 footer .social-media .fab {
   margin: 0.25rem;
+}
+
+/*Footer Tablet*/
+@media only screen and (max-width: 768px) {
+  footer .footer-container {
+    margin: 2rem 1rem;
+  }
 }
 
 /*Footer Mobile*/
