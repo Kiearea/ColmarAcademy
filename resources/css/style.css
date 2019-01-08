@@ -99,6 +99,25 @@ nav .mobile {
 }
 
 /*Nav Tablet*/
+@media only screen and (max-width: 768px) {
+  nav .links-container ul li {
+    margin: 0 0.5rem;
+  }
+
+  nav .links-container {
+    font-size: 1rem;
+  }
+
+  nav .logo-container .logo img {
+    height: 2rem;
+  }
+
+  nav .logo-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*Tablet 2*/
 @media only screen and (max-width: 1024px) {
   nav .links-container ul li {
     margin: 0 0.5rem;
@@ -201,6 +220,39 @@ nav .mobile {
 
 /*#First Tablet*/
 @media only screen and (max-width: 768px) {
+  #first {
+    padding: 4rem 0 0 0;
+  }
+
+  #first img{
+    height: 60%;
+    margin-top: 2rem;
+  }
+
+  #first .text-container {
+    display: flex;
+    margin: 2rem 1rem;
+  }
+
+  #first .text-container h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  #first .text-container h4 {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #first .text-container a {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+/*#First Tablet2*/
+@media only screen and (max-width: 1024px) {
   #first {
     padding: 4rem 0 0 0;
   }
@@ -360,6 +412,86 @@ nav .mobile {
 
 /*#Second Tablet*/
 @media only screen and (max-width: 768px) {
+  #second .image-container {
+    width: 62%;
+    margin: 2rem 1rem;
+  }
+
+  #second .image-container img {
+    width: 100%;
+  }
+
+  #second .image-container .text-container h2 {
+    font-size: 2rem;
+  }
+
+  #second .image-container .text-container h4 {
+    font-size: 1.25rem;
+  }
+
+  #second .image-container .text-container h5 {
+    font-size: 1rem;
+    margin: 2rem auto 1.5rem auto;
+  }
+
+  #second .boxes-container {
+    margin: 1rem 0;
+    width: 30%;
+    border: none;
+  }
+
+  #second .boxes-container img {
+    display: none;
+    width: 100%;
+    padding: auto 1rem auto 1rem;
+  }
+
+  #second .boxes-container .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  #second .boxes-container .text-container {
+    width: 100%;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  #second .boxes-container .text-container h2 {
+    margin-bottom: 1rem;
+  }
+
+  #second .boxes-container .text-container p {
+    display: none;
+    margin-bottom: .75rem;
+  }
+
+  #second .boxes-container .orientation-container {
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #second .boxes-container .campus-container {
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #second .boxes-container .guest-container {
+    width: 100;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*#Second Tablet2*/
+@media only screen and (max-width: 1024px) {
   #second .image-container {
     width: 62%;
     margin: 2rem 1rem;
@@ -610,6 +742,51 @@ nav .mobile {
   }
 }
 
+/*#Third Tablet2*/
+@media only screen and (max-width: 1024px) {
+  #third .courses-container img {
+    display: none;
+  }
+
+  #third {
+    padding: 0;
+    background-color: inherit;
+    border-top: 1px solid #002533;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #third .container {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: #e6f8ff;
+  }
+
+  #third h1 {
+    font-size: 3rem;
+    margin: 1.5rem 1rem;
+  }
+
+  #third .courses-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 1rem;
+    align-self: center;
+  }
+
+  #third .courses-container h3 {
+    display: none;
+  }
+
+  #third .courses-container p {
+    display: none;
+  }
+}
+
 /*#Third Mobile*/
 @media only screen and (max-width: 480px) {
   #third .courses-container img {
@@ -722,6 +899,63 @@ nav .mobile {
 
 /*#Fourth Tablet*/
 @media only screen and (max-width: 768px) {
+  #fourth .thesis-container {
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  #fourth .video-container {
+    width: 60%;
+    margin: 0;
+  }
+
+  #fourth .video-container video {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #fourth h1 {
+    font-size: 3rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  #fourth .text-container p {
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  #fourth .boxes-container {
+    width: 30%;
+    margin-left: 1rem;
+  }
+
+  #fourth .boxes-container img {
+    width: 100%;
+    margin: 0;
+  }
+
+  #fourth .boxes-container .fisma-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #fourth .boxes-container .now-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #fourth .text-container h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+/*#Fourth Tablet2*/
+@media only screen and (max-width: 1024px) {
   #fourth .thesis-container {
     margin: 1rem;
     justify-content: center;
