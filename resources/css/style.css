@@ -99,7 +99,7 @@ nav .mobile {
 }
 
 /*Nav Tablet*/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1280px) {
   nav .links-container ul li {
     margin: 0 0.5rem;
   }
